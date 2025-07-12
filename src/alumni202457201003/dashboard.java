@@ -5,10 +5,10 @@
 package alumni202457201003;
 
 import com.formdev.flatlaf.FlatLightLaf;
-import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import javax.swing.UIManager;
 import javax.swing.*;
 import java.awt.*;
+
 import java.awt.event.*;
 /**
  *
@@ -21,7 +21,17 @@ public class dashboard extends javax.swing.JFrame {
      */
     public dashboard() {
         initComponents();
+        dasbord();
     }
+    
+    void dasbord(){
+        jkonten.setBackground(new Color(0, 134, 179));
+        jkonten.removeAll();
+        jkonten.add(new dashboar());
+        jkonten.repaint();
+        jkonten.revalidate();  
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
